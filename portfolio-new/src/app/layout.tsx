@@ -18,9 +18,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-      <div className='flex flex-row justify-center w-[100%] my-4'>
+      {/* <div className='flex flex-row justify-center w-[100%] my-4'>
         <Menubar />
-      </div>
+      </div> */}
         {children}
       </body>
     </html>

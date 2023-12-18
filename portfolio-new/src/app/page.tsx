@@ -4,7 +4,10 @@ import Menubar from '@/components/Menubar'
 
 export default function Home() {
   return (
-    <main className="flex p-2">
+    <main className="p-2">
+      <div className='flex flex-row justify-center w-[100%] my-4'>
+        <Menubar tab='home' />
+      </div>
       <h1>Home</h1>
     </main>
   )
