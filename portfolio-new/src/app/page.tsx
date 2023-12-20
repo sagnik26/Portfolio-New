@@ -8,7 +8,9 @@ export default function Home() {
       <div className='flex flex-row justify-center w-[100%] my-4'>
         <Menubar tab='home' />
       </div>
-      <h1>Home</h1>
+      <div className='border-2'>
+        <h1>hello</h1>
+      </div>
     </main>
   )
 }
