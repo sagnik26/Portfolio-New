@@ -1,3 +1,5 @@
+"use client";
+
 const screenSize: any = {
     tablet: 768,
     mobile: 640,

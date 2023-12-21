@@ -21,11 +21,11 @@ export default function RootLayout({
         <body className={`${inter.className}`}>
           {children}
         </body> : 
-        <body className={`${inter.className} grid grid-cols-6`}>
+        <body className={`${inter.className} grid grid-cols-6 lg:overflow-hidden`}>
           <div className='bg-[#fafafa] col-span-1 h-screen'>
           </div>
       
-          <div className=' col-span-4 h-screen'>
+          <div className='col-span-4 h-screen lg:overflow-scroll lg:overflow-x-hidden'>
               {children}
           </div>
             
