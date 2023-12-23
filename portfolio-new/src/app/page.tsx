@@ -14,13 +14,13 @@ export default function Home() {
         <Menubar tab='home' />
       </div>
       <div className='grid grid-cols-1 grid-rows-2 gap-20 lg:grid-cols-2 lg:gap-10 mx-5 lg:mx-10 z-0 lg:mt-20 lg:h-[400px]'>
-        <div className='col-span-1 pt-[25px] flex flex-row justify-start z-0 h-[350px] lg:h-[380px]'>
+        <div className='col-span-1 flex flex-row justify-center items-center h-[350px] lg:h-[380px] z-0'>
           <Image 
             src={require("../../public/assets/me.webp")} 
             alt={'Picture of the author'}
             height={350}
             width={350} 
-            style={{objectFit: "contain", borderRadius: "50px", transform: `rotate(-5deg)`}} 
+            style={{borderRadius: "200px" }} 
           />
         </div>
         <article className='col-span-1 z-0 h-[390px] -mt-10 lg:mt-0'>
@@ -34,9 +34,9 @@ export default function Home() {
           </p>
         </article>
       </div>
-      <div className='mx-5 lg:mx-10 mt-[110px] lg:mt-20 z-0'>
+      <div className='mx-5 lg:mx-10 mt-[100px] md:mt-10 lg:mt-20 z-0'>
         <h2 className='font-extrabold text-[36px] mb-10'>Skills</h2>
-        <div className='flex flex-col lg:flex-row lg:flex-wrap gap-6 lg:gap-10 justify-between'>
+        <div className='flex flex-col md:flex-row md:flex-wrap gap-6 md:gap-10 justify-between'>
           <SkillCard logo={require("../../public/assets/html.png")} name='HTML' />
           <SkillCard logo={require("../../public/assets/css.png")} name='CSS' borderAlign={isMobile ? false : true} />
           <SkillCard logo={require("../../public/assets/js.png")} name='JavaScript' />
@@ -45,7 +45,7 @@ export default function Home() {
           <SkillCard logo={require("../../public/assets/next.png")} name='NextJS' borderAlign={isMobile ? false : true} />
         </div>
       </div>
-      <div className='mx-5 lg:mx-10 mt-[50px] lg:mt-20 lg:mb-[50px] z-0'>
+      <div className='mx-5 lg:mx-10 mt-[50px] lg:mt-20 md:mb-[50px] z-0'>
         <h2 className='font-extrabold text-[36px] mb-10'>Achievements</h2>
         <div className='w-[100%]'>
           <Achievements 
@@ -60,7 +60,7 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className='h-[40px] lg:h-[10px]'>
+      <div className='h-[40px] md:h-[10px]'>
 
       </div>
     </div>

@@ -13,6 +13,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   const isMobile = useWindowSize("mobile");
+  const isTablet = useWindowSize("laptop")
 
   return (
     <html lang="en">
@@ -21,11 +22,11 @@ export default function RootLayout({
         <body className={`${inter.className} overflow-x-hidden`}>
           {children}
         </body> : 
-        <body className={`${inter.className} grid grid-cols-6 lg:overflow-hidden`}>
+        <body className={`${inter.className} grid grid-cols-6 md:overflow-hidden`}>
           <div className='bg-[#fafafa] col-span-1 h-screen'>
           </div>
       
-          <div className='col-span-4 h-screen lg:overflow-scroll lg:overflow-x-hidden'>
+          <div className='col-span-4 h-screen md:overflow-scroll md:overflow-x-hidden'>
               {children}
           </div>
             
