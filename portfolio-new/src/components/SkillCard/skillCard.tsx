@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const skillCard: React.FC<SkillCardProps> = ({ logo, name, borderAlign = true }) => {
   return (
-    <div className={`bg-[#fafafa] drop-shadow-[0_2px_3px_rgba(0,0,0,0.25)] rounded-tl-full rounded-tr-full ${borderAlign ? 'rounded-bl-full' : 'rounded-br-full'} w-[100%] lg:w-[30%] flex flex-row justify-between p-5`}>
+    <div className={`bg-[#fafafa] drop-shadow-[0_2px_3px_rgba(0,0,0,0.25)] rounded-tl-full rounded-tr-full ${borderAlign ? 'rounded-bl-full' : 'rounded-br-full'} w-[100%] md:w-[45%] flex flex-row justify-between p-5`}>
       {
         borderAlign ? 
         <>

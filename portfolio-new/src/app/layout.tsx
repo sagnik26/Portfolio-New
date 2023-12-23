@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       {
-        isMobile ? 
+        isTablet ? 
         <body className={`${inter.className} overflow-x-hidden`}>
           {children}
         </body> : 
