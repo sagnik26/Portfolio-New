@@ -37,7 +37,7 @@ export default function Home() {
       <div className='mx-5 lg:mx-10 mt-[95px] md:-mt-24 lg:mt-20 z-0'>
         <h2 className='font-extrabold text-[36px] mb-5'>Skills</h2>
         <div className='flex flex-col md:flex-row md:flex-wrap gap-6 md:gap-10 justify-between'>
-          <SkillCard logo={require("../../public/assets/html.png")} name='HTML' />
+          <SkillCard logo={require("../../public/assets/html.png")} name='HTML'  />
           <SkillCard logo={require("../../public/assets/css.png")} name='CSS' borderAlign={isMobile ? false : true} />
           <SkillCard logo={require("../../public/assets/js.png")} name='JavaScript' />
           <SkillCard logo={require("../../public/assets/typescript.png")} name='TypeScript' borderAlign={isMobile ? false : true} />
