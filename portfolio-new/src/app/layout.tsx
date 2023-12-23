@@ -18,7 +18,7 @@ export default function RootLayout({
     <html lang="en">
       {
         isMobile ? 
-        <body className={`${inter.className}`}>
+        <body className={`${inter.className} overflow-x-hidden`}>
           {children}
         </body> : 
         <body className={`${inter.className} grid grid-cols-6 lg:overflow-hidden`}>
